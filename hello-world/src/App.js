@@ -23,18 +23,29 @@ const cssstyle={
 }
 function App() {
   return (
-    <div className="App">
+    <>
       <h1>Hello world</h1>
       <p>This is <span style={cssstyle}><b>Reema Agrawal</b></span></p>
       <p>I AM {i==1?'Intrested':'Not Intrested'}</p>
       <img src={logo}/>
+      
       <p>The topics you will learn in web development:
       {element}
       </p>
-      <FunctionalComponent/>
-      <Classcomponent/>
+      <hr></hr>
+      <h1>This is implementation of props in functionl and class component</h1>
+      <FunctionalComponent  num={"1st"}h1={"XYZ COMPANY"} 
+      content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}/>
+      <FunctionalComponent num={"2nd"} h1={"ABC COMPANY"} 
+      content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}/>
+      
+      <Classcomponent num={"1st"} h1={"PQR COMPANY"}
+      content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}/ >
       <Classcomponent1/>
-    </div>
+      <hr></hr>
+      
+      <h1>This is implementation of set states in class component</h1>
+    </>
   );
 }
 
