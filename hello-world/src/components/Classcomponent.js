@@ -25,9 +25,7 @@ export class Classcomponent extends React.Component{
     }
 }
  export class Classcomponent1 extends React.Component{
-     constructor(){
-         super();
-     }
+     
     render(){
         return(<h2> This is our new class component</h2>
             );
