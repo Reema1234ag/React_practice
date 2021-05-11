@@ -24,8 +24,11 @@ export class Classcomponent extends React.Component{
         );
     }
 }
-/* GEETING DATA USING STATE*/
+/* GEETING DATA USING STATE (state actually use to change data if components wants to change their data they recived through props)*/
  export class Classcomponent1 extends React.Component{
+     constructor(){
+         super()
+     }
     render(){
         return(<h2> This is our new class component</h2>
             );
