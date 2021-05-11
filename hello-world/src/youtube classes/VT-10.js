@@ -4,7 +4,7 @@ export class VT extends React.Component{
     constructor(){
         super();
         this.state={
-            h:"Hii Reema",
+            h:"Welcome Visitor",
         }
     }
     update=()=>{
@@ -16,7 +16,7 @@ export class VT extends React.Component{
         return(
             <div>
             <h1>{this.state.h}</h1>
-            <button onClick={this.update}>Update Me</button>
+            <button onClick={this.update}>Suscribe</button>
             </div>
         )
     }
