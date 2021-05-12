@@ -40,13 +40,13 @@ export class BindingHandlers extends Component {
             <div>
             <h3>using 1st Way</h3>
             <h2>{this.state.message}</h2>
-            <button onClick={this.clickHandler.bind(this)}>Click</button>  
+            <button onClick={this.clickHandler.bind(this)}>Click</button>               {/*Here*/}
             </div>
         )
     }
 }
 
-//2nd way- use arrow function9calling the event handlers in the arrow function body
+//2nd way- use arrow function(calling the event handlers in the arrow function body)
 export class BindingHandlers1 extends Component {
     constructor(props) {
         super(props)
@@ -66,7 +66,7 @@ export class BindingHandlers1 extends Component {
             <div>
             <h3>using 2nd Way</h3>
             <h2>{this.state.message}</h2>
-            <button onClick={()=>{this.clickHandler()}}>Click</button>  
+            <button onClick={()=>{this.clickHandler()}}>Click</button>              {/*here*/}
             </div>
         )
     }
@@ -110,7 +110,7 @@ export class BindingHandlers3 extends Component {
            message:"Hello",  
         }
     }
-    clickHandler=()=>{
+    clickHandler=()=>{                                                  //here
         this.setState({
             message:"how r u?"
         })
