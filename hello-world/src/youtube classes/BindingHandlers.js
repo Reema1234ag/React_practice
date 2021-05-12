@@ -1,5 +1,13 @@
 import React, { Component } from 'react'
-
+const btn={
+    width:"100px",
+    height:"40px",
+    padding:"8px",
+    backgroundColor:"indianred",
+    color:"white",
+    borderRadius:"12px",
+    fontSize:"20px"
+}
 
 
 export  class ClassClick extends Component {                //simple event handling in class compo.
@@ -40,7 +48,7 @@ export class BindingHandlers extends Component {
             <div>
             <h3>using 1st Way</h3>
             <h2>{this.state.message}</h2>
-            <button onClick={this.clickHandler.bind(this)}>Click</button>               {/*Here*/}
+            <button style={btn} onClick={this.clickHandler.bind(this)}>Click</button>               {/*Here*/}
             </div>
         )
     }
@@ -66,7 +74,7 @@ export class BindingHandlers1 extends Component {
             <div>
             <h3>using 2nd Way</h3>
             <h2>{this.state.message}</h2>
-            <button onClick={()=>{this.clickHandler()}}>Click</button>              {/*here*/}
+            <button style={btn} onClick={()=>{this.clickHandler()}}>Click</button>              {/*here*/}
             </div>
         )
     }
@@ -94,7 +102,7 @@ export class BindingHandlers2 extends Component {
             <div>
             <h3>using 3rd Way</h3>
             <h2>{this.state.message}</h2>
-            <button onClick={this.clickHandler}>Click</button>  
+            <button style={btn}  onClick={this.clickHandler}>Click</button>  
             </div>
         )
     }
@@ -121,7 +129,7 @@ export class BindingHandlers3 extends Component {
             <div>
             <h3>using 4th Way</h3>
             <h2>{this.state.message}</h2>
-            <button onClick={this.clickHandler}>Click</button>  
+            <button style={btn} onClick={this.clickHandler}>Click</button>  
             </div>
         )
     }
