@@ -74,8 +74,8 @@ function App() {
       <hr></hr>
       <h1>Event Handling in functional and class component</h1>
       <FunctionClick><h3>In functional component</h3></FunctionClick>
-      <h2>Event binding in class component</h2>
-      <ClassClick/>
+      <ClassClick><h3>In class component</h3></ClassClick>
+      <h1>Event binding in class component</h1>
       <BindingHandlers/>
 
     </>
