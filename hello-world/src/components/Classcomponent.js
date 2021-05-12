@@ -4,10 +4,17 @@ const css={
     height:"340px",
     border:"1px solid black",
     display:"inlineBlock",
-
     margin:"10px 30px",
     textAlign:"justify",
 
+}
+const btn={
+    width:"100px",
+    height:"30px",
+    padding:"3px",
+    backgroundColor:"goldenrod",
+    color:"white",
+    borderRadius:"8px",
 }
 /* GETTING DATA THROGH PROPS*/
 export class Classcomponent extends React.Component{
@@ -53,7 +60,7 @@ export class Classcomponent2 extends React.Component{
             <div>
             <h2>{this.state.roll}</h2>
             <h2>{this.state.name}</h2>
-            <button onClick={this.updateMe}>Update Me</button>
+            <button style={btn} onClick={this.updateMe}>Update Me</button>
             </div>
         );
     }
@@ -80,7 +87,7 @@ export class Classcomponent3 extends React.Component{
             <div>
             <h2>{this.state.roll}</h2>
             <h2>{this.state.name}</h2>
-            <button onClick={this.updateMe}>Update Me</button>
+            <button style={btn} onClick={this.updateMe}>Update Me</button>
             </div>
         );
     }
