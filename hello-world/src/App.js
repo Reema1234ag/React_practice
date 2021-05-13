@@ -22,6 +22,9 @@ import LifecycleA1 from './youtube classes2/LifecycleA1';
 import Fragment from './youtube classes2/Fragment';
 import PureCom from './youtube classes2/PureCom';
 import ParentCom from './youtube classes2/ParentCom';
+import RefsDemo from './youtube classes2/RefsDemo';
+import RefsFocusBoutton from './youtube classes2/RefsFocusBotton';
+import FRParentInput from './youtube classes2/FRParentInput';
 
 
 const i=true;
@@ -128,10 +131,17 @@ function App() {
     <LifecycleA1/>
     <hr></hr>
     <Fragment/>
-    <h1>Pure Component</h1>
+    <h1>Pure and memo Component</h1>
     <ParentCom/>
+    <hr></hr>
+    <h1>Refs</h1>
+    <RefsDemo/>
+    <RefsFocusBoutton/>
+    <h1>Forwarding refs</h1>
+    <FRParentInput/>
+
       </>
-  );
+  );  
 }
 
 export default App;
