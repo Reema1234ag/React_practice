@@ -1,0 +1,5 @@
+.success{
+    color:orchid;
+}
+/* Module css file suffix should be .module.css
+it donot apply on child components.(that's the difference)*/
