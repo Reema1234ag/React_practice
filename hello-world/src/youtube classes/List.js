@@ -34,7 +34,7 @@ export  function List1() {
             Course:"B.tech",
             Skill:"Android",
         },]
-        const personeList= persons.map(person =><Person person={person}/> )   //passing object(person) to another component//passing data as props
+        const personeList= persons.map(x =><Person person={x}/> )   //passing object(x) to another component as props 
     return (
         <div>
           {personeList}
@@ -42,3 +42,6 @@ export  function List1() {
     )
 }
 //this is for rendering person list only
+
+//most imp- Warning: Each child in a list should have a unique "key" prop(console warning)
+//let's move furthur to remove this.
