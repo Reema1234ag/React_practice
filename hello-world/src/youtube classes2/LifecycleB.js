@@ -26,3 +26,4 @@ export default class LifecycleB extends Component {
         )
         }
 }
+//child component

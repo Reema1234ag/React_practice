@@ -30,3 +30,4 @@ export default class LifecycleA extends Component {
 }
 
 //check order in console
+//child component after render and before componentDidMount
