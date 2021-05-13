@@ -34,7 +34,7 @@ export  function List1() {
             Course:"B.tech",
             Skill:"Android",
         },]
-        const personeList= persons.map(person =><Person person={person}/> )     //passing object(person) to another component
+        const personeList= persons.map(person =><Person person={person}/> )     //passing object(person) to another component//passing data as props
     return (
         <div>
           {personeList}
