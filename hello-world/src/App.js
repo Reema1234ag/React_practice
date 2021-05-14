@@ -37,6 +37,7 @@ import CounterMain from './youtube classes3/Render props/CounterMain';
 import ComponentC from './youtube classes4/Context/ComponentC';
 import { UserProvider } from './youtube classes4/Context/UserContext';
 import PostList from './youtube classes4/HTTP/PostList';
+import PostForm from './youtube classes4/HTTP/PostForm';
 
 
 const i=true;
@@ -60,8 +61,9 @@ const cssstyle={
 }
 function App() {
   return (
-    <>
-{/*
+    <>    
+{/*   
+      UNCOMMENT WHEN RUN THE COMPONENTS
       <h1>Hello world</h1>
       <p>This is <span style={cssstyle}><b>Reema Agrawal</b></span></p>
       <p>I AM {i==1?'Intrested':'Not Intrested'}</p>
@@ -135,7 +137,7 @@ function App() {
       <h1>Module CSS</h1>
       <h3 className={styles.success}>Success</h3>
       <hr></hr>
-    {/*-----------------------------------------------------------------------------------------------------*/}
+    {/*-----------------------------------------------------------------------------------------------------*
     <h1>Form handling</h1>
     <FormHandling/>
     <hr></hr>
@@ -182,8 +184,12 @@ function App() {
     <ComponentC/>
     </UserProvider> 
     <hr></hr>
-    <h1>HTTP POST Request</h1>  
+    <h1>HTTP GET Request</h1>  
     <PostList/>
+    <hr></hr>
+    <h1>HTTP POST Request</h1>
+    <PostForm/>
+
     
     </>
   );  
