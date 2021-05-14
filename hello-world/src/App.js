@@ -25,6 +25,17 @@ import ParentCom from './youtube classes2/ParentCom';
 import RefsDemo from './youtube classes2/RefsDemo';
 import RefsFocusBoutton from './youtube classes2/RefsFocusBotton';
 import FRParentInput from './youtube classes2/FRParentInput';
+import PortalDemo from './youtube classes3/Portals and Error Boundary/PortalDemo';
+import Hero from './youtube classes3/Portals and Error Boundary/Hero';
+import ErrorBoundary from './youtube classes3/Portals and Error Boundary/ErrorBoundary';
+import ClickCounter from './youtube classes3/HOC/ClickCounter';
+import HoverCounter from './youtube classes3/HOC/HoverCounter';
+import ClickCounterTwo from './youtube classes3/Render props/ClickCounterTwo';
+import HoverCounterTwo from './youtube classes3/Render props/HoverCounterTwo';
+import User from './youtube classes3/Render props/User';
+import CounterMain from './youtube classes3/Render props/CounterMain';
+import ComponentC from './youtube classes4/Context/ComponentC';
+import { UserProvider } from './youtube classes4/Context/UserContext';
 
 
 const i=true;
@@ -49,6 +60,7 @@ const cssstyle={
 function App() {
   return (
     <>
+
       <h1>Hello world</h1>
       <p>This is <span style={cssstyle}><b>Reema Agrawal</b></span></p>
       <p>I AM {i==1?'Intrested':'Not Intrested'}</p>
@@ -139,8 +151,37 @@ function App() {
     <RefsFocusBoutton/>
     <h1>Forwarding refs</h1>
     <FRParentInput/>
-
-      </>
+    <hr></hr> 
+    <h1>Portals</h1>
+    <PortalDemo/> 
+    <hr></hr>
+    <h1>Error Handling</h1>
+    <ErrorBoundary>
+    <Hero heroname={'Batman'}/>
+    </ErrorBoundary>
+    <ErrorBoundary>
+    <Hero heroname={'Superman'}/>
+    </ErrorBoundary>
+    {/*<ErrorBoundary>
+    <Hero heroname={'Joker'}/>    // commenting bcoz throw error
+    </ErrorBoundary>*/}
+    <hr></hr>
+    <h1>Higher Order Components</h1>
+    <ClickCounter name={'Reema '}/>
+    <HoverCounter name={'Reema '}/>
+    <hr></hr>
+    <h1>Render Props</h1>
+    <User name={(isloggedin)=> isloggedin? 'Reema':'Guest'}/>
+    <CounterMain 
+    render={(count,incrementCount)=> (<ClickCounterTwo count={count} incrementCount={incrementCount}/>) }/>
+    <CounterMain render={(count,incrementCount)=> (<HoverCounterTwo count={count} incrementCount={incrementCount}/>) }/>
+    <hr></hr>
+    <h1>Context</h1>  
+    <UserProvider value={'Vishwas'}>
+    <ComponentC/>
+    </UserProvider>  
+    
+    </>
   );  
 }
 
