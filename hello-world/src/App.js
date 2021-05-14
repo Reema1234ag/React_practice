@@ -36,6 +36,7 @@ import User from './youtube classes3/Render props/User';
 import CounterMain from './youtube classes3/Render props/CounterMain';
 import ComponentC from './youtube classes4/Context/ComponentC';
 import { UserProvider } from './youtube classes4/Context/UserContext';
+import PostList from './youtube classes4/HTTP/PostList';
 
 
 const i=true;
@@ -60,7 +61,7 @@ const cssstyle={
 function App() {
   return (
     <>
-
+{/*
       <h1>Hello world</h1>
       <p>This is <span style={cssstyle}><b>Reema Agrawal</b></span></p>
       <p>I AM {i==1?'Intrested':'Not Intrested'}</p>
@@ -179,7 +180,10 @@ function App() {
     <h1>Context</h1>  
     <UserProvider value={'Vishwas'}>
     <ComponentC/>
-    </UserProvider>  
+    </UserProvider> 
+    <hr></hr>
+    <h1>HTTP POST Request</h1>  
+    <PostList/>
     
     </>
   );  
